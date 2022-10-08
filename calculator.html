@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="block">
+      <button class="button" onclick="addition()">+</button>
+      <button class="button" onclick="substraction()">-</button>
+      <button class="button" onclick="multiplication()">x</button>
+      <button class="button" onclick="division()">:</button>
+    </div>
+
+    <style>
+      .button {
+        width: 80px;
+        font-size: 44px;
+        background-color: blueviolet;
+      }
+      .block {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <script>
+      function addition() {
+        let a = prompt("Введите первое число", "");
+        let b = prompt("Введите второе число", "");
+        alert(Number(a) + Number(b));
+      }
+      function substraction() {
+        let a = prompt("Введите первое число", "");
+        let b = prompt("Введите второе число", "");
+        alert(a - b);
+      }
+      function multiplication() {
+        let a = prompt("Введите первое число", "");
+        let b = prompt("Введите второе число", "");
+        alert(a * b);
+      }
+      function division() {
+        let a = prompt("Введите первое число", "");
+        let b = prompt("Введите второе число", "");
+        alert(a / b);
+      }
+    </script>
+  </body>
+</html>

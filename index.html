@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button class="button" onclick="showMessage()">Нажми меня!</button>
+
+    <style>
+      .button {
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 44px;
+        background-color: bisque;
+      }
+    </style>
+
+    <script>
+      function showMessage() {
+        let name = prompt("Ваше имя?", "");
+        alert(`Привет, ${name} !`);
+      }
+    </script>
+  </body>
+</html>
